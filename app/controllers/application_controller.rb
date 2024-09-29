@@ -5,6 +5,9 @@ class ApplicationController < ActionController::Base
     render json: { name: rand }
   end
 def goodbye
-  render json: { name: "goodbye" }
+  render json: { name: "変更してみたよ" }
+end
+def html
+  render html: "htmlだよ"
 end
 end
